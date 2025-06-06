@@ -25,10 +25,6 @@ import Image from "next/image";
 export default function LandingPage() {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const handleVideoClose = () => {
-    setIsVideoPlaying(false);
-    document.body.style.overflow = "auto"; // Re-enable scrolling
-  };
 
   const features = [
     {
